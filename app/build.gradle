@@ -1,5 +1,6 @@
 plugins {
     id 'com.android.application'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -7,11 +8,11 @@ android {
 
     defaultConfig {
         applicationId "com.shinepond.nwa"
-        minSdk 30
+        minSdk 21
         targetSdk 32
         versionCode 1
-        versionName "1.0"
-
+        versionName "1.0.0"
+        multiDexEnabled true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -19,22 +20,24 @@ android {
     productFlavors {
         dev {
             dimension "server"
-            resValue "string", "server_url", "http://1.209.94.60:8001"
+            buildConfigField("String", "HOST", "\"http://1.209.94.60:8001\"")
         }
         prod {
             dimension "server"
-            resValue "string", "server_url", "http://172.29.1.197:8001"
+            buildConfigField("String", "HOST", "\"http://172.29.1.197:8001\"")
         }
     }
 
     buildTypes {
         release {
+            manifestPlaceholders = [appName: "@string/app_name"]
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
 
         inhouse {
             //내부 배포
+            manifestPlaceholders = [appName: "@string/app_name_inhouse"]
             initWith release
             applicationIdSuffix ".inhouse"
             debuggable true
@@ -42,6 +45,7 @@ android {
 
         debug {
             //개발
+            manifestPlaceholders = [appName: "@string/app_name_dev"]
             applicationIdSuffix ".debug"
             signingConfig signingConfigs.debug
             minifyEnabled false
@@ -64,4 +68,9 @@ dependencies {
 
     /* 넥사크로 라이브러리 (project/app/libs) */
     implementation name: 'nexacro', ext: 'aar'
+    //implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
+
+    implementation platform('com.google.firebase:firebase-bom:30.2.0')
+    implementation 'com.google.firebase:firebase-analytics'
+    implementation "com.google.firebase:firebase-iid"
 }

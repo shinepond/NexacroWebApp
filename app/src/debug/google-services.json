@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "56966677745",
+    "project_id": "nexacro-web-app",
+    "storage_bucket": "nexacro-web-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56966677745:android:b9076c0dbc9713cde49550",
+        "android_client_info": {
+          "package_name": "com.shinepond.nwa"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56966677745-gnvk114n1gsknf2qs12q3b99koj5qdhv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYJuqVMfHhTmFtRCmoVluzGxBwv5vLxHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56966677745-gnvk114n1gsknf2qs12q3b99koj5qdhv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:56966677745:android:c653f3a7805e578ae49550",
+        "android_client_info": {
+          "package_name": "com.shinepond.nwa.debug"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "56966677745-gnvk114n1gsknf2qs12q3b99koj5qdhv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYJuqVMfHhTmFtRCmoVluzGxBwv5vLxHQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "56966677745-gnvk114n1gsknf2qs12q3b99koj5qdhv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
