@@ -5,7 +5,6 @@ plugins {
 
 android {
     compileSdk 32
-
     defaultConfig {
         applicationId "com.shinepond.nwa"
         minSdk 21
@@ -68,7 +67,6 @@ dependencies {
 
     /* 넥사크로 라이브러리 (project/app/libs) */
     implementation name: 'nexacro', ext: 'aar'
-    //implementation fileTree(include: ['*.jar', '*.aar'], dir: 'libs')
 
     implementation platform('com.google.firebase:firebase-bom:30.2.0')
     implementation 'com.google.firebase:firebase-analytics'
