@@ -36,9 +36,9 @@
     },
     {
       "client_info": {
-        "mobilesdk_app_id": "1:56966677745:android:c653f3a7805e578ae49550",
+        "mobilesdk_app_id": "1:56966677745:android:fa59520b1c39ac64e49550",
         "android_client_info": {
-          "package_name": "com.shinepond.nwa.debug"
+          "package_name": "com.shinepond.nwa.dev"
         }
       },
       "oauth_client": [

@@ -1,5 +1,4 @@
 <resources>
-    <string name="app_name">NexacroWebApp</string>
-    <string name="app_name_inhouse">NexacroWebApp_inhouse</string>
-    <string name="app_name_dev">NexacroWebApp_dev</string>
+    <string name="app_name">nwa</string>
+    <string name="app_name_dev">dev_nwa</string>
 </resources>

@@ -19,33 +19,24 @@ android {
     productFlavors {
         dev {
             dimension "server"
+            applicationIdSuffix ".dev"
+            manifestPlaceholders = [appName: "@string/app_name_dev"]
             buildConfigField("String", "HOST", "\"http://1.209.94.60:8001\"")
         }
         prod {
             dimension "server"
+            manifestPlaceholders = [appName: "@string/app_name"]
             buildConfigField("String", "HOST", "\"http://172.29.1.197:8001\"")
         }
     }
 
     buildTypes {
         release {
-            manifestPlaceholders = [appName: "@string/app_name"]
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
 
-        inhouse {
-            //내부 배포
-            manifestPlaceholders = [appName: "@string/app_name_inhouse"]
-            initWith release
-            applicationIdSuffix ".inhouse"
-            debuggable true
-        }
-
         debug {
-            //개발
-            manifestPlaceholders = [appName: "@string/app_name_dev"]
-            applicationIdSuffix ".debug"
             signingConfig signingConfigs.debug
             minifyEnabled false
             debuggable true
