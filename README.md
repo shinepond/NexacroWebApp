@@ -1,5 +1,5 @@
 # NexacroWebApp
-Nexacro Web Application
+Nexacro Web app을 띄우기 위한 android native Application
 
 ## 1. gradle setting
  - Android Gradle Plugin Version : 7.2.0
