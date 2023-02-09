@@ -17,6 +17,12 @@ android {
 
     flavorDimensions "server"
     productFlavors {
+        local {
+            dimension "server"
+            applicationIdSuffix ".dev"
+            manifestPlaceholders = [appName: "@string/app_name_local"]
+            buildConfigField("String", "HOST", "\"http://192.168.219.115:8001\"")
+        }
         dev {
             dimension "server"
             applicationIdSuffix ".dev"

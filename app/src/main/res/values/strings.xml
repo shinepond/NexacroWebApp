@@ -1,4 +1,5 @@
 <resources>
     <string name="app_name">nwa</string>
     <string name="app_name_dev">dev_nwa</string>
+    <string name="app_name_local">local_nwa</string>
 </resources>

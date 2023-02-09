@@ -1,5 +1,5 @@
 # NexacroWebApp
-Nexacro Web app을 띄우기 위한 android native Application
+Nexacro Web App 을 띄우기 위한 android native Application
 
 ## 1. gradle setting
  - Android Gradle Plugin Version : 7.2.0
@@ -16,8 +16,9 @@ Nexacro Web app을 띄우기 위한 android native Application
     2) debug (디버깅 허용)
  
  - Flavors - server
-   1) dev (개발서버)
-   2) prod (상용서버)
+   1) dev 
+   2) prod 
+   3) local 
 
 ## 4. dependencies
  - 넥사크로 라이브러리 : project/app/libs/nexacro.aar
